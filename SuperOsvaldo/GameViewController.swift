@@ -34,6 +34,7 @@ class GameViewController: UIViewController {
         let musicURL = NSBundle.mainBundle().URLForResource("bg", withExtension: "mp3")
         self.backgroundMusic = AVAudioPlayer(contentsOfURL: musicURL, error: nil)
         if let bgMusic = self.backgroundMusic {
+            bgMusic.numberOfLoops = -1
             bgMusic.prepareToPlay()
             bgMusic.play()
         }
@@ -44,7 +45,6 @@ class GameViewController: UIViewController {
         
 
         if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
-            // Configure the view.
             let skView = self.view as SKView
             skView.showsFPS = true
             skView.showsNodeCount = true

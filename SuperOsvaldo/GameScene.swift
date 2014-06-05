@@ -12,29 +12,44 @@ class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
 
         let texture = SKTexture(imageNamed:"osvaldo")
-        let sprite = SKSpriteNode(texture: texture)
 
-        let firstFrame = SKTexture(rect:CGRectMake(0.0, 0.0, 0.5, 0.5), inTexture: texture)
+        //bottom left
+//        let firstFrame = SKTexture(rect:CGRectMake(0.0, 0.0, 0.5,0.5), inTexture: texture)
+        
+        //bottom right
+//        let firstFrame = SKTexture(rect:CGRectMake(0.5, 0.0, 0.5,0.5), inTexture: texture)
+
+        //top left
+        let firstFrame = SKTexture(rect:CGRectMake(0.0, 0.5, 0.5,0.5), inTexture: texture)
+        //top right
+        let secondFrame = SKTexture(rect:CGRectMake(0.5, 0.5, 0.5,0.5), inTexture: texture)
+        
+        let run = SKAction.animateWithTextures([firstFrame, secondFrame], timePerFrame: 0.1)
+        let sprite = SKSpriteNode(texture: firstFrame)
 
         sprite.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-
+        sprite.runAction(SKAction.repeatActionForever(run))
         self.addChild(sprite)
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        /* Called when a touch begins */
         
         for touch: AnyObject in touches {
             let location = touch.locationInNode(self)
+            let texture = SKTexture(imageNamed:"osvaldo")
+
+            let firstFrame = SKTexture(rect:CGRectMake(0.0, 0.5, 0.5,0.5), inTexture: texture)
+
+            let secondFrame = SKTexture(rect:CGRectMake(0.5, 0.5, 0.5,0.5), inTexture: texture)
             
-            let sprite = SKSpriteNode(imageNamed:"osvaldo")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
+            let run = SKAction.animateWithTextures([firstFrame, secondFrame], timePerFrame: 0.1)
+            let sprite = SKSpriteNode(texture: firstFrame)
             sprite.position = location
+
             
             let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
             
+            sprite.runAction(SKAction.repeatActionForever(run))
             sprite.runAction(SKAction.repeatActionForever(action))
             
             self.addChild(sprite)
