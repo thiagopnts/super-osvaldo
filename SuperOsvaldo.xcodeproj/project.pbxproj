@@ -14,6 +14,8 @@
 		AF7115C6193FF68A00DC97E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7115C4193FF68A00DC97E8 /* Main.storyboard */; };
 		AF7115C8193FF68A00DC97E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7115C7193FF68A00DC97E8 /* Images.xcassets */; };
 		AF7115D4193FF68A00DC97E8 /* SuperOsvaldoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7115D3193FF68A00DC97E8 /* SuperOsvaldoTests.swift */; };
+		AF7115DE193FF7F800DC97E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7115DD193FF7F800DC97E8 /* AVFoundation.framework */; };
+		AF7115E0193FF91300DC97E8 /* bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AF7115DF193FF91300DC97E8 /* bg.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		AF7115CD193FF68A00DC97E8 /* SuperOsvaldoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperOsvaldoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7115D2193FF68A00DC97E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF7115D3193FF68A00DC97E8 /* SuperOsvaldoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperOsvaldoTests.swift; sourceTree = "<group>"; };
+		AF7115DD193FF7F800DC97E8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AF7115DF193FF91300DC97E8 /* bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bg.mp3; path = SuperOsvaldo/bg.mp3; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7115DE193FF7F800DC97E8 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +66,7 @@
 		AF7115AE193FF68A00DC97E8 = {
 			isa = PBXGroup;
 			children = (
+				AF7115DD193FF7F800DC97E8 /* AVFoundation.framework */,
 				AF7115B9193FF68A00DC97E8 /* SuperOsvaldo */,
 				AF7115D0193FF68A00DC97E8 /* SuperOsvaldoTests */,
 				AF7115B8193FF68A00DC97E8 /* Products */,
@@ -79,6 +85,7 @@
 		AF7115B9193FF68A00DC97E8 /* SuperOsvaldo */ = {
 			isa = PBXGroup;
 			children = (
+				AF7115E1193FFE0400DC97E8 /* Resources */,
 				AF7115BC193FF68A00DC97E8 /* AppDelegate.swift */,
 				AF7115BE193FF68A00DC97E8 /* GameScene.sks */,
 				AF7115C0193FF68A00DC97E8 /* GameScene.swift */,
@@ -113,6 +120,14 @@
 				AF7115D2193FF68A00DC97E8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF7115E1193FFE0400DC97E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF7115DF193FF91300DC97E8 /* bg.mp3 */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +213,7 @@
 				AF7115C8193FF68A00DC97E8 /* Images.xcassets in Resources */,
 				AF7115BF193FF68A00DC97E8 /* GameScene.sks in Resources */,
 				AF7115C6193FF68A00DC97E8 /* Main.storyboard in Resources */,
+				AF7115E0193FF91300DC97E8 /* bg.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

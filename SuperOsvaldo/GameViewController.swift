@@ -8,10 +8,10 @@
 
 import UIKit
 import SpriteKit
+import AVFoundation
 
 extension SKNode {
     class func unarchiveFromFile(file : NSString) -> SKNode? {
-        
         let path = NSBundle.mainBundle().pathForResource(file, ofType: "sks")
         
         var sceneData = NSData.dataWithContentsOfFile(path, options: .DataReadingMappedIfSafe, error: nil)
@@ -26,8 +26,22 @@ extension SKNode {
 
 class GameViewController: UIViewController {
 
+    var backgroundMusic: AVAudioPlayer?
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        let musicURL = NSBundle.mainBundle().URLForResource("bg", withExtension: "mp3")
+        self.backgroundMusic = AVAudioPlayer(contentsOfURL: musicURL, error: nil)
+        if let bgMusic = self.backgroundMusic {
+            bgMusic.prepareToPlay()
+            bgMusic.play()
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
             // Configure the view.
