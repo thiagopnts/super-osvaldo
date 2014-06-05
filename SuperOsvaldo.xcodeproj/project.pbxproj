@@ -12,7 +12,7 @@
 		AF7115C1193FF68A00DC97E8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7115C0193FF68A00DC97E8 /* GameScene.swift */; };
 		AF7115C3193FF68A00DC97E8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7115C2193FF68A00DC97E8 /* GameViewController.swift */; };
 		AF7115C6193FF68A00DC97E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7115C4193FF68A00DC97E8 /* Main.storyboard */; };
-		AF7115C8193FF68A00DC97E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7115C7193FF68A00DC97E8 /* Images.xcassets */; };
+		AF7115C8193FF68A00DC97E8 /* osvaldo.png in Resources */ = {isa = PBXBuildFile; fileRef = AF7115C7193FF68A00DC97E8 /* osvaldo.png */; };
 		AF7115D4193FF68A00DC97E8 /* SuperOsvaldoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7115D3193FF68A00DC97E8 /* SuperOsvaldoTests.swift */; };
 		AF7115DE193FF7F800DC97E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7115DD193FF7F800DC97E8 /* AVFoundation.framework */; };
 		AF7115E0193FF91300DC97E8 /* bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AF7115DF193FF91300DC97E8 /* bg.mp3 */; };
@@ -36,7 +36,7 @@
 		AF7115C0193FF68A00DC97E8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		AF7115C2193FF68A00DC97E8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		AF7115C5193FF68A00DC97E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AF7115C7193FF68A00DC97E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AF7115C7193FF68A00DC97E8 /* osvaldo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = osvaldo.png; path = Images.xcassets/osvaldo.imageset/osvaldo.png; sourceTree = "<group>"; };
 		AF7115CD193FF68A00DC97E8 /* SuperOsvaldoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperOsvaldoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7115D2193FF68A00DC97E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF7115D3193FF68A00DC97E8 /* SuperOsvaldoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperOsvaldoTests.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 				AF7115C0193FF68A00DC97E8 /* GameScene.swift */,
 				AF7115C2193FF68A00DC97E8 /* GameViewController.swift */,
 				AF7115C4193FF68A00DC97E8 /* Main.storyboard */,
-				AF7115C7193FF68A00DC97E8 /* Images.xcassets */,
+				AF7115C7193FF68A00DC97E8 /* osvaldo.png */,
 				AF7115BA193FF68A00DC97E8 /* Supporting Files */,
 			);
 			path = SuperOsvaldo;
@@ -210,7 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF7115C8193FF68A00DC97E8 /* Images.xcassets in Resources */,
+				AF7115C8193FF68A00DC97E8 /* osvaldo.png in Resources */,
 				AF7115BF193FF68A00DC97E8 /* GameScene.sks in Resources */,
 				AF7115C6193FF68A00DC97E8 /* Main.storyboard in Resources */,
 				AF7115E0193FF91300DC97E8 /* bg.mp3 in Resources */,
